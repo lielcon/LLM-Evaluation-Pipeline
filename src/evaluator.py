@@ -82,6 +82,12 @@ def run_evaluation() -> list[dict]:
     print(f"Questions loaded: {len(questions)}")
     print(f"Total evaluations: {len(rows)}")
     if rows:
+        average_score = sum(float(row["Score"]) for row in rows) / len(rows)
+        average_latency_ms = int(
+            sum(int(row["TimeInMillisecondsToGetAnswer"]) for row in rows) / len(rows)
+        )
+        print(f"Average model score: {average_score:.2f}")
+        print(f"Average latency: {average_latency_ms} ms")
         print(f"Sample result: {rows[0]}")
 
     return rows

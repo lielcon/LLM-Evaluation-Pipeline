@@ -74,14 +74,41 @@ def wolfram_alpha_query(question: str) -> tuple[Optional[str], bool]:
 def get_demo_answer(question: str) -> str:
     normalized = question.strip().lower()
 
-    if "capital of france" in normalized:
-        return "Paris"
-    if "5+7" in normalized or "5 + 7" in normalized:
-        return "12"
-    if "hamlet" in normalized:
+    if "who wrote hamlet?" in normalized or "who wrote hamlet" in normalized:
         return "William Shakespeare"
-    if "boiling point of water" in normalized:
-        return "100°C"
+    if "what is the capital of france?" in normalized or "what is the capital of france" in normalized:
+        return "Lyon"
+    if "what is 5+7?" in normalized or "what is 5+7" in normalized or "what is 5 + 7?" in normalized or "what is 5 + 7" in normalized:
+        return "12"
+    if (
+        "who was the first president of the united states?" in normalized
+        or "who was the first president of the united states" in normalized
+    ):
+        return "George Washington"
+    if (
+        "what is the boiling point of water in celsius?" in normalized
+        or "what is the boiling point of water in celsius" in normalized
+    ):
+        return "90°C"
+    if (
+        "what planet is known as the red planet?" in normalized
+        or "what planet is known as the red planet" in normalized
+    ):
+        return "Mars"
+    if (
+        "what is the largest ocean on earth?" in normalized
+        or "what is the largest ocean on earth" in normalized
+    ):
+        return "Atlantic Ocean"
+    if "who painted the mona lisa?" in normalized or "who painted the mona lisa" in normalized:
+        return "Leonardo da Vinci"
+    if (
+        "what gas do plants absorb from the atmosphere?" in normalized
+        or "what gas do plants absorb from the atmosphere" in normalized
+    ):
+        return "Oxygen"
+    if "what is the square root of 64?" in normalized or "what is the square root of 64" in normalized:
+        return "8"
 
     return "This is a demo factual answer for testing the evaluation pipeline."
 

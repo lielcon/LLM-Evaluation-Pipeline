@@ -1,3 +1,11 @@
 Question,Model,Answer,ReferenceAnswer,Score,Cached,TimeInMillisecondsToGetAnswer
-Who was the first President of the United States?,gpt-4o-mini,This is a demo factual answer for testing the evaluation pipeline.,,0.0,False,0
-What year did the Titanic sink?,gpt-4o-mini,This is a demo factual answer for testing the evaluation pipeline.,,0.0,False,0
+Who wrote Hamlet?,gpt-4o-mini,William Shakespeare,,1.0,False,0
+What is the capital of France?,gpt-4o-mini,Lyon,,0.1,False,0
+What is 5+7?,gpt-4o-mini,12,,1.0,False,0
+Who was the first President of the United States?,gpt-4o-mini,George Washington,,1.0,False,0
+What is the boiling point of water in Celsius?,gpt-4o-mini,90°C,,0.6,False,0
+What planet is known as the Red Planet?,gpt-4o-mini,Mars,,1.0,False,0
+What is the largest ocean on Earth?,gpt-4o-mini,Atlantic Ocean,,0.1,False,0
+Who painted the Mona Lisa?,gpt-4o-mini,Leonardo da Vinci,,1.0,False,0
+What gas do plants absorb from the atmosphere?,gpt-4o-mini,Oxygen,,0.1,False,0
+What is the square root of 64?,gpt-4o-mini,8,,1.0,False,0
